@@ -76,12 +76,12 @@ p {
 
 /* ---- retour vers le haut --------------------------------------------------------------------- */
 
-.btnsvg svg {
+/* .btnsvg svg {
     position: fixed;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
-}
+} */
 
 /* ---- fin retour vers le haut --------------------------------------------------------------------- */
 
@@ -549,6 +549,12 @@ header .header_droite img {
 }
 .projet:nth-child(3){
     transition-delay: 800ms;
+}
+.projet:nth-child(4){
+    transition-delay: 1200ms;
+}
+.projet:nth-child(5){
+    transition-delay: 1600ms;
 }
 .btn a{
     text-decoration: none;
