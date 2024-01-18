@@ -147,9 +147,9 @@ topElements.forEach((el) => observer.observe(el));
 
 var typingEffect = new Typed(".multitext", {
   strings: [
-    "le développement front-end",
-    "le développement back-end",
-    "l'intrégration web",
+    "développeur front-end",
+    "développeur back-end",
+    "intrégration web",
   ],
   loop: true,
   typeSpeed: 100,
