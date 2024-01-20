@@ -149,7 +149,7 @@ var typingEffect = new Typed(".multitext", {
   strings: [
     "développeur front-end",
     "développeur back-end",
-    "intrégration web",
+    "intégrateur web",
   ],
   loop: true,
   typeSpeed: 100,
