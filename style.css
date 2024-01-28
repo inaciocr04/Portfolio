@@ -740,6 +740,9 @@ footer p {
     header .header_gauche {
         margin-right: 0;
     }
+    header .header_gauche h2{
+        height: 80px;
+    }
 
     header .header_droite {
         margin-bottom: 40px;
