@@ -897,15 +897,20 @@ footer p {
         height: 300px;
     }
     .btn{
-    
-        background: none;
+        background: black;
         border: 2px solid #000;
-        background-color: #000;
         text-transform: uppercase;
         font-weight: bold;
-        padding: 12px 20px;
-        min-width: 200px;
+        padding: 5px;
+        width: 40px;
+        text-align: center;
         cursor: pointer;
+        transition: color 0.4s linear;
+        -webkit-transition: color 0.4s linear;
+        -moz-transition: color 0.4s linear;
+        -ms-transition: color 0.4s linear;
+        -o-transition: color 0.4s linear;
+        position: relative;
     }
     .btn a{
         color: #fff;
