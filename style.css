@@ -886,7 +886,7 @@ footer p {
 
 /* ---- Responsiv projet ------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 621px) {
+@media screen and (max-width: 800px) {
 .projet_perso{
     margin-top: -250px;
 }
@@ -911,7 +911,7 @@ footer p {
         color: #fff;
 
     }
-     .tous_projet .gauche, .droite, .haut, .apparait {
+    .gauche, .droite, .haut, .apparait {
         transition: none;
         -webkit-transition: none;
         -moz-transition: none;
