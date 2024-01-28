@@ -911,7 +911,7 @@ footer p {
         color: #fff;
 
     }
-/*     .gauche, .droite, .haut, .apparait {
+    .gauche, .droite, .haut, .apparait {
         transition: none;
         -webkit-transition: none;
         -moz-transition: none;
@@ -930,5 +930,5 @@ footer p {
       .projet:nth-child(4),
       .projet:nth-child(5) {
         transition-delay: 0ms;
-      } */
+      }
 }
