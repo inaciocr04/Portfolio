@@ -85,9 +85,6 @@ let set = 0;
 const targetY = window.innerHeight * 0.8;
 
 function scrollHandler(e){
-  if (window.innerWidth <= 600) {
-    return; // Ne pas exécuter la logique JavaScript pour les petits écrans
-  }
     const{
         scrollY
     } = window;
