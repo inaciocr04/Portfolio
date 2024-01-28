@@ -911,7 +911,7 @@ footer p {
         color: #fff;
 
     }
-        .gauche, .droite, .haut, .apparait {
+     .tous_projet .gauche, .droite, .haut, .apparait {
         transition: none;
         -webkit-transition: none;
         -moz-transition: none;
