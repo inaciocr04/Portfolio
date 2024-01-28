@@ -897,7 +897,7 @@ footer p {
         height: 300px;
     }
     .btn{
-        background: black;
+        background-color: black;
         border: 2px solid #000;
         text-transform: uppercase;
         font-weight: bold;
