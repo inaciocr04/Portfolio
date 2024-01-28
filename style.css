@@ -911,4 +911,24 @@ footer p {
         color: #fff;
 
     }
+        .gauche, .droite, .haut, .apparait {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+      }
+    
+      .projet:nth-child(2),
+      .projet:nth-child(3),
+      .projet:nth-child(4),
+      .projet:nth-child(5) {
+        transition-delay: 0ms;
+      }
 }
