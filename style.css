@@ -712,7 +712,12 @@ footer p {
   
     .section:nth-child(odd) {
       flex-direction: column;
-    }
+      transform: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+}
   
     .bead {
         left: -2.8%;
