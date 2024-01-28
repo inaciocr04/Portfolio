@@ -888,7 +888,7 @@ footer p {
 
 @media screen and (max-width: 800px) {
 .projet_perso{
-    margin-top: -250px;
+    margin-top: -150px;
 }
     .tous_projet{
         grid-template-columns: repeat(1,1fr);
