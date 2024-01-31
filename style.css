@@ -159,19 +159,19 @@ header .header_gauche h1 {
 
 header .header_gauche .liens {
     margin-top: 80px;
+    gap: 50px;
 }
 
 header .header_gauche .liens a {
     text-decoration: none;
     color: inherit;
-    position: relative;
-    margin-left: 40px;
     font-weight: bold;
 }
 
 header .header_gauche .liens a i {
     position: absolute;
     margin-left: 5px;
+    font-size: 30px;
 }
 
 /* header .header_droite {
