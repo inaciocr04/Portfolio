@@ -769,7 +769,6 @@ footer p {
         width: 621px;
         height: 100vh;
         top: 0;
-        border: 2px solid black;
         margin-left: -250%;
         transition: all 0.5s linear;
         -webkit-transition: all 0.5s linear;
