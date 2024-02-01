@@ -347,6 +347,7 @@ header .header_droite img {
     -moz-border-radius: 10px ;
     -ms-border-radius: 10px ;
     -o-border-radius: 10px ;
+    cursor: none;
 }
 
 .trie ul{
@@ -583,6 +584,7 @@ header .header_droite img {
 
 .btn{
     background: none;
+    cursor: none;
     border: 2px solid #000;
     text-transform: uppercase;
     font-weight: bold;
