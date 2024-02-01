@@ -633,6 +633,7 @@ header .header_droite img {
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
+    cursor: none;
 }
 
 /* .lien_button{
@@ -706,15 +707,15 @@ footer p {
     .line {
       position: absolute;
       z-index: 1;
-      left: 0; /* Aligner la ligne à gauche pour les petits écrans */
+      left: 0; 
       width: 2px;
       top: -50px;
       bottom: -50px;
       background-color: #000;
-      display: block; /* Afficher la ligne pour les petits écrans */
+      display: block; 
     }
   
-    /* Supprimer les pseudo-éléments before et after pour la ligne */
+
   
     .section {
       display: flex;
@@ -722,7 +723,7 @@ footer p {
       transform: none;
       transition: none;
       position: relative;
-      margin: 20px 0; /* Ajuster la marge pour les petits écrans */
+      margin: 20px 0;
       padding: 1rem;
       border-radius: 1rem;
       align-items: center;
@@ -744,8 +745,8 @@ footer p {
   
     .content {
         margin-left: 20px;
-      width: 100%; /* Largeur maximale pour s'adapter aux petits écrans */
-      text-align: left; /* Aligner le texte à droite pour les petits écrans */
+      width: 100%; 
+      text-align: left; 
     }
   }
   
