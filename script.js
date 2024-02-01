@@ -153,3 +153,48 @@ var typingEffect = new Typed(".multitext", {
   backSpeed: 80,
   backDelay: 1500,
 });
+
+const mousemove = document.querySelector(".mousemove");
+
+window.addEventListener("mousemove", (e) => {
+  mousemove.style.left = e.pageX + "px";
+  mousemove.style.top = e.pageY + "px";
+});
+
+window.addEventListener("mousedown", () => {
+  gsap.to(mousemove, {
+    scale: 0.5,
+    x: "0%",
+    y: "0%",
+    duration: 0.3,
+    ease: "power2.out",
+  });
+});
+
+window.addEventListener("mouseup", () => {
+  gsap.to(mousemove, {
+    scale: 1,
+    x: "0%",
+    y: "0%",
+    duration: 0.3,
+    ease: "power2.out",
+  });
+});
+
+const text = document.querySelectorAll("p, h1, h2, h3, h4, h5, li, a");
+
+text.forEach((paragraph) => {
+  paragraph.addEventListener("mouseenter", () => {
+    gsap.to(mousemove, {
+      scale: 2,
+      duration: 0.3,
+    });
+  });
+
+  paragraph.addEventListener("mouseleave", () => {
+    gsap.to(mousemove, {
+      scale: 1,
+      duration: 0.3,
+    });
+  });
+});
