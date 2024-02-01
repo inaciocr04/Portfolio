@@ -180,13 +180,13 @@ header .header_gauche .liens a {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    cursor: none;
 }
 
 header .header_gauche .liens a i {
     position: absolute;
     margin-left: 5px;
     font-size: 35px;
+    cursor: none;
 }
 
 /* header .header_droite {
