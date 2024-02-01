@@ -347,7 +347,6 @@ header .header_droite img {
     -moz-border-radius: 10px ;
     -ms-border-radius: 10px ;
     -o-border-radius: 10px ;
-    cursor: none;
 }
 
 .trie ul{
@@ -359,9 +358,7 @@ header .header_droite img {
     display: grid;
     grid-template-columns: 150px 150px 150px;
 }
-.trie ul li{
-    cursor: pointer;
-}
+
 #bouton:nth-child(1){
     border-radius: 10px 0 0 10px;
     -webkit-border-radius: 10px 0 0 10px;
@@ -602,6 +599,7 @@ header .header_droite img {
 
 .btn:hover a{
     color: white;
+    cursor: none;
 }
 .btn::before{
     content: "";
