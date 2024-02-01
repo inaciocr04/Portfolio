@@ -180,6 +180,7 @@ header .header_gauche .liens a {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+    cursor: none;
 }
 
 header .header_gauche .liens a i {
@@ -617,6 +618,7 @@ header .header_droite img {
     -moz-transition: transform 0.5s;
     -ms-transition: transform 0.5s;
     -o-transition: transform 0.5s;
+    cursor: none;
 }
 .btn1::before{
     transform: scaleX(0);
