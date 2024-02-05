@@ -758,6 +758,10 @@ footer p {
 
 @media screen and (max-width: 621px) {
 
+    .mousemove{
+display :none;
+}
+
     header {
         flex-direction: column-reverse;
     }
