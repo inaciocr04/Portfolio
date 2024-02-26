@@ -8,6 +8,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
@@ -16,11 +27,10 @@
     <div class="mousemove"></div>
     <nav class="color_background">
       <div class="wrapper flex nav">
-        <h1>
-          <i class="bi bi-stars color_span"></i>Portfo<span class="color_span"
-            >lio</span
-          >
-        </h1>
+        <div class="flex logo">
+          <img id="logo" src="./image/Logo_Dark.png" alt="" />
+          <h1>Portfo<span>lio</span></h1>
+        </div>
         <div class="nav_links">
           <ul class="flex">
             <li><a href="index.html">Accueil</a></li>
@@ -29,55 +39,68 @@
             <li>
               <a href="#projet_perso">Projet personnel</a>
             </li>
-            <!-- <li>email<i class="bi bi-arrow-up-right"></i></li> -->
+
             <div id="theme-button" class="mode flex">
               <li id="dark-light-mode">Dark Mode</li>
               <i id="theme-logo" class="bi bi-moon-fill"></i>
             </div>
           </ul>
         </div>
-        <img
-          class="menu-hamburger"
-          src="./image/menu-btn.png"
-          alt="bouton de menu"
-        />
+        <i class="bi bi-list menu-hamburger"></i>
       </div>
     </nav>
 
     <header class="wrapper">
       <div class="header_gauche">
         <small><i class="bi bi-geo-alt"></i> Bas Rhin, France</small>
-        <h1>Je suis Inácio Rodrigues</h1>
-        <h2>Je suis <span class="multitext"></span></h2>
-        <p>
-          Actuellement je suis détenteur du baccalauréat STI2D, Sciences et
-          Technologies de l'Industrie et du Développement Durable et j'étudie à
-          l'IUT de Haguenau dans la filière MMI, Métiers du Multimédia et de
-          l'Internet, en vue d'obtenir mon diplôme BAC +3.
+        <h1 data-aos="fade-right" data-aos-duration="1000">Inácio Rodrigues</h1>
+        <h2 data-aos="fade-right" data-aos-duration="3000">
+          <span class="multitext color_span"></span>
+        </h2>
+        <p data-aos="fade-right" data-aos-duration="3000">
+          Actuellement titulaire d'un baccalauréat STI2D (Sciences et
+          Technologies de l'Industrie et du Développement Durable), je poursuis
+          mes études à l'IUT de Haguenau dans la filière MMI (Métiers du
+          Multimédia et de l'Internet) en vue d'obtenir mon diplôme de niveau
+          BAC +3. Je suis actuellement à la recherche d'un stage de 10 semaines,
+          ainsi que d'une alternance d'une durée d'un an ou d'un an et demi.
         </p>
         <div class="liens flex">
-          <a
-            href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BTh3Cs3hdTMeFculfJlzfew%3D%3D"
-            ><i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://github.com/inaciocr04?tab=repositories"><i class="bi bi-github"></i></a>
-          <!--<a href="#">email<i class="bi bi-arrow-up-right"></i></a>-->
-          <a href="./image/CV_site.pdf"
-            ><i class="bi bi-file-earmark-person-fill"></i>
-          </a>
-          <a href="mailto:stage_mmi@cavalier-rodrigues.fr"><i class="bi bi-envelope-at-fill"></i></a>
+          <div class="flex contact">
+            <a
+              href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BTh3Cs3hdTMeFculfJlzfew%3D%3D"
+            >
+              Linkedin</a
+            >
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <div class="flex contact">
+            <a href="https://github.com/inaciocr04?tab=repositories">GitHub</a>
+            <i class="bi bi-github"></i>
+          </div>
+          <div class="flex contact">
+            <a href="./image/CV_site.pdf"> Mon CV </a>
+            <i class="bi bi-download"></i>
+          </div>
+          <div class="flex contact">
+            <a href="mailto:stage_mmi@cavalier-rodrigues.fr">Contacter moi </a>
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
         </div>
       </div>
-      <div class="header_droite">
+      <div
+        data-aos="zoom-out-down"
+        data-aos-duration="2000"
+        class="header_droite"
+      >
         <img
-          src="./image/photo-identiter.png"
+          class="moi"
+          src="./image/photo-moi.png"
           alt="photo de Inacio Rodrigues"
         />
       </div>
     </header>
     <main class="wrapper">
-      
-
       <section id="compétences" class="competence competences2 flex">
         <div class="categorie">
           <div class="titre">
@@ -107,15 +130,15 @@
           </div>
           <div class="logiciel flex">
             <div class="img flex">
-              <img src="./image/twig.jpg" alt="" />
-            </div>
-            <p>Twig</p>
-          </div>
-          <div class="logiciel flex">
-            <div class="img flex">
               <img src="./image/js.png" alt="" />
             </div>
             <p>JavaScipt</p>
+          </div>
+          <div class="logiciel flex">
+            <div class="img flex">
+              <img src="./image/twig.jpg" alt="" />
+            </div>
+            <p>Twig</p>
           </div>
           <div class="logiciel flex">
             <div class="img flex">
@@ -137,6 +160,7 @@
             </div>
             <p>PHP</p>
           </div>
+
           <div class="logiciel flex">
             <div class="img flex">
               <img src="./image/sql-server.png" alt="" />
@@ -173,7 +197,7 @@
             <div class="img flex">
               <img src="./image/solidworks.png" alt="" />
             </div>
-            <p>Solidworks</p>
+            <p>Soliworks</p>
           </div>
           <div class="logiciel flex">
             <div class="img flex">
@@ -183,15 +207,16 @@
           </div>
         </div>
       </section>
-      <section id="parcours" class="responsive">
+      <section id="parcours">
         <div class="container">
           <div class="top-section">
             <div class="titre">
-            <h2>Mon parcours scolaire</h2>
+              <h2>Mon parcours scolaire</h2>
             </div>
             <p>
-              La frise qui suit présente mon parcours scolaire effectuer depuis
-              le collège a maintenant
+              La frise ci-dessous présente mon parcours scolaire, débutant
+              depuis le collège jusqu'à aujourd'hui. Elle illustre les
+              différentes étapes de mon parcours éducatif jusqu'à présent.
             </p>
           </div>
           <div class="timeline">
@@ -201,8 +226,8 @@
               <div class="content">
                 <h2>Collège Nicolas Copernic (2015/2019)</h2>
                 <p>
-                  Suite à mes quatre années de scolarité dans cet établissement,
-                  j'ai obtenu mon brevet des collèges avec une mention assez
+                  À l'issue de mes quatre années passées dans cet établissement,
+                  j'ai obtenu mon brevet des collèges avec la mention assez
                   bien.
                 </p>
               </div>
@@ -212,8 +237,8 @@
               <div class="content">
                 <h2>Lycée Charles-Emile Freppel (2019/2020)</h2>
                 <p>
-                  Etant mon lycée de secteur, j'ai du réaliser ma seconde dans
-                  cet établissement en voie générale.
+                  Étant mon lycée de secteur, j'ai dû effectuer ma classe de
+                  seconde dans cet établissement en voie générale.
                 </p>
               </div>
             </div>
@@ -222,9 +247,9 @@
               <div class="content">
                 <h2>Lycée polyvalent Louis Marchal (2020/2022)</h2>
                 <p>
-                  J'ai fait ma Première et ma Terminale dans cet établissement
-                  au sein de la filière technologique en STI2D où j'ai obtenu
-                  mon baccalauréat technologique.
+                  J'ai suivi ma Première et ma Terminale au sein de la filière
+                  technologique STI2D dans cet établissement, où j'ai obtenu mon
+                  baccalauréat technologique.
                 </p>
               </div>
             </div>
@@ -233,9 +258,10 @@
               <div class="content">
                 <h2>Institut Universitaire de technologie (2022/2025)</h2>
                 <p>
-                  Je suis actuellement dans cette université pour suivre le
-                  cursus MMI et je compte continuer dans cette voie pendant les
-                  deux années suivantes avec une possibilité d'alternance.
+                  Actuellement inscrit dans cette université pour suivre le
+                  cursus MMI, je prévois de poursuivre dans cette voie pendant
+                  les deux années suivantes, avec la possibilité d'opter pour
+                  l'alternance.
                 </p>
               </div>
             </div>
@@ -247,7 +273,121 @@
         <div class="titre">
           <h2>Mes projets personnels / scolaires</h2>
         </div>
-        <div class="tous_projet flex">
+
+        <div class="voirplus">
+          <a id="plus_competence">Voir plus</a>
+        </div>
+        <div class="tous_projet flex overflow">
+          <div class="projet flex gauche">
+            <div class="new">New Project</div>
+
+            <div class="image_gauche">
+              <img src="./image/SAE303.png" alt="" />
+            </div>
+            <div class="text_droite">
+              <h5>Watt'Else</h5>
+              <p>
+                "Ceci est un site informatif créé lors d'un partiel dans le but
+                de sensibiliser les utilisateurs à l'impact de nos actions sur
+                la planète. Nous proposons également des solutions pour
+                l'avenir. Notre objectif est de faire prendre conscience aux
+                visiteurs des enjeux environnementaux et de les inciter à agir
+                de manière responsable.
+              </p>
+              <div class="competence_projet">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+                <p>SWIPER</p>
+                <p>CHART</p>
+              </div>
+              <div>
+                <button class="btn btn1">
+                  <a href="https://github.com/inaciocr04/SAE303"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </button>
+
+                <button class="btn btn1">
+                  <a href="https://guillaumesamtmann.fr/autres/sae303/"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </button>
+              </div>
+              <small>Site réaliser en début de deuxième année de MMI</small>
+            </div>
+          </div>
+          <div class="projet flex gauche">
+            <div class="new">New Project</div>
+
+            <div class="image_gauche">
+              <img src="./image/sae301.png" alt="" />
+            </div>
+            <div class="text_droite">
+              <h5>MusicTrade</h5>
+              <p>
+                Ceci est un site permettant aux utilisateurs de créer un compte
+                ou de se connecter afin de télécharger des partitions et de
+                réserver des cours de musique. De plus, les utilisateurs ayant
+                un compte musicien ont la possibilité d'ajouter des partitions
+                et des cours de musique. Ce projet a été développé dans le cadre
+                d'un partiel pour mettre en pratique la méthode CRUD.
+              </p>
+              <div class="competence_projet">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>TWIG</p>
+                <p>PHP</p>
+                <p>SQL</p>
+                <p>CRUD</p>
+              </div>
+              <div>
+                <button class="btn btn1">
+                  <a href="https://github.com/inaciocr04/MusicTrade"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </button>
+
+                <button class="btn btn1">
+                  <a href="https://sae301.rodrigues.etu.mmi-unistra.fr/"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </button>
+              </div>
+              <small>Site réaliser en début de deuxième année de MMI</small>
+            </div>
+          </div>
+          <div class="projet flex droite">
+            <div class="image_gauche">
+              <img src="./image/site_jeux_videos.png" alt="" />
+            </div>
+            <div class="text_droite">
+              <h5>Site Web Jeux vidéos</h5>
+              <p>
+                Voici un site dédié à la publication de jeux vidéo, offrant la
+                possibilité aux utilisateurs de les ajouter à leur panier et de
+                simuler une commande. De plus, chaque membre peut contribuer en
+                ajoutant de nouveaux jeux au site et en laissant des
+                commentaires sur les jeux déjà présents.
+              </p>
+              <div class="competence_projet">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>TWIG</p>
+                <p>PHP</p>
+                <p>SQL</p>
+                <p>JS</p>
+              </div>
+              <div>
+                <button class="btn btn1">
+                  <a href="https://sae-203.rodrigues.etu.mmi-unistra.fr"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </button>
+              </div>
+              <small>Site réaliser en début de première année de MMI</small>
+            </div>
+          </div>
           <div class="projet flex gauche">
             <div class="image_gauche">
               <img src="./image/site_minecraft_accueil_francais.png" alt="" />
@@ -255,115 +395,45 @@
             <div class="text_droite">
               <h5>Site Web Minecraft</h5>
               <p>
-                Ce site web a été conçu lors d'une SAE afin d'acquérir des
-                compétences en développement web dans la sécurité d'un site
-                internet.
+                Voici le tout premier site conçu dans le cadre du parcours MMI,
+                mettant en avant l'utilisation du langage Twig. Ce site vise à
+                fournir des informations sur le monde de Minecraft de manière
+                claire et concise.
               </p>
-              <button class="btn btn1">
-                <a href=""><i class="bi bi-github"></i></a>
-              </button>
-              <button class="btn btn1">
-                <a href="https://sae105.rodrigues.etu.mmi-unistra.fr/accueil.php"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </button>
-            </div>
-          </div>
-          <div class="projet flex haut">
-            <div class="image_gauche">
-              <img src="./image/site_jeux_videos.png" alt="" />
-            </div>
-            <div class="text_droite">
-              <h5>Site Web Jeux vidéos</h5>
-              <p>
-                Ce site web a été conçu lors d'une SAE afin d'acquérir des
-                compétences en développement web dans la pratique de TWIG.
-              </p>
-              <button class="btn btn1">
-                <a href="https://sae-203.rodrigues.etu.mmi-unistra.fr"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </button>
-            </div>
-          </div>
-          <div class="projet flex droite">
-            <div class="image_gauche">
-              <img src="./image/sae301.png" alt="" />
-            </div>
-            <div class="text_droite">
-              <h5>MusicTrade</h5>
-              <p>
-                Ce site web a été conçu lors d'une SAE afin d'amélioré nos
-                compétences en développement web Back-End avec la méthode CRUD
-                sur TWIG.
-              </p>
-              <button class="btn btn1">
-                <a href="https://github.com/inaciocr04/MusicTrade"><i class="bi bi-github"></i></a>
-              </button>
-
-              <button class="btn btn1">
-                <a href="https://sae301.rodrigues.etu.mmi-unistra.fr/"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </button>
-            </div>
-          </div>
-
-          <div class="projet flex gauche">
-            <div class="image_gauche">
-              <img src="./image/trelo_moi.png" alt="" />
-            </div>
-            <div class="text_droite">
-              <h5>Maquette d'un site internet</h5>
-              <p>
-                Ceci est une maquette reproduite personnellement lors des cours
-                d'intégration web.
-              </p>
-              <button class="btn btn1">
-                <a href="#"><i class="bi bi-x-octagon-fill"></i></a>
-              </button>
-            </div>
-          </div>
-          <div class="projet flex haut">
-            <div class="image_gauche">
-              <img src="./image/modelisation_3D.jpg" alt="" />
-            </div>
-            <div class="text_droite">
-              <h5>Modélisation 3D et Impression 3D</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nobis mollitia maiores porro voluptas ab vitae necessitatibus,
-                consequuntur inventore iure, harum aspernatur architecto
-                praesentium. Nesciunt asperiores ratione aspernatur omnis
-                molestiae!
-              </p>
-              <button class="btn btn1">
-                <a href="#"><i class="bi bi-x-octagon-fill"></i></a>
-              </button>
+              <div class="competence_projet">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>TWIG</p>
+                <p>PHP</p>
+              </div>
+              <div>
+                <button class="btn btn1">
+                  <a href=""><i class="bi bi-github"></i></a>
+                </button>
+                <button class="btn btn1">
+                  <a
+                    href="https://sae105.rodrigues.etu.mmi-unistra.fr/accueil.php"
+                    ><i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </button>
+              </div>
+              <small>Site réaliser en début de première année de MMI</small>
             </div>
           </div>
         </div>
       </section>
-      <!--       <div class="btnsvg">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
-          fill="currentColor"
-          class="bi bi-arrow-up-circle-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
-          />
-        </svg>
-      </div> -->
     </main>
-    <footer class="wrapper">
-      <h3><i class="bi bi-stars"></i>Inacio Rodrigues</h3>
+    <footer class="wrapper flex">
+      <img id="logo_footer" src="./image/Logo_Dark.png" alt="" />
+      <h3>Site réaliser par Inacio Rodrigues en MMI2</h3>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   </body>
 </html>
