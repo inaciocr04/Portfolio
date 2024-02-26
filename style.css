@@ -34,10 +34,6 @@ body {
     cursor: none;
 }
 
-/* * {
-    outline: 1px solid tomato;
-} */
-
 /* ---- Variable universelle --------------------------------------------------------------------- */
 .flex {
     display: flex;
